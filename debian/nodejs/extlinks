@@ -1,0 +1,6 @@
+@jest/globals
+rollup
+@rollup/pluginutils
+ts-jest		test
+typescript
+@types/node

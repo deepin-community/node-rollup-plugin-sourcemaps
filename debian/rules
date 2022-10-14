@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Tell nodejs to look for embedded modules
+export NODE_PATH := ${CURDIR}
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	rollup -c

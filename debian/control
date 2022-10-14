@@ -1,0 +1,35 @@
+Source: node-rollup-plugin-sourcemaps
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , jest <!nocheck>
+ , node-jest-globals
+ , node-rollup-plugin-babel
+ , node-rollup-plugin-typescript (>= 3.0.9)
+ , node-rollup-pluginutils (>= 2.0.1)
+ , node-source-map-resolve
+ , node-types-node
+ , rollup
+ , ts-jest <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-rollup-plugin-sourcemaps
+Vcs-Git: https://salsa.debian.org/js-team/node-rollup-plugin-sourcemaps.git
+Homepage: https://github.com/maxdavidson/rollup-plugin-sourcemaps
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-rollup-plugin-sourcemaps
+Architecture: all
+Depends: ${misc:Depends}
+ , node-rollup-pluginutils (>= 2.0.1)
+ , node-source-map-resolve
+Description: Rollup plugin for grabbing source maps from sourceMappingURLs
+ Useful for working with precompiled modules with existing source maps, without
+ resorting to sorcery (another library).
+ .
+ Inspired by webpack/source-map-loader library.
+ .
+ Node.js is an event-based server-side JavaScript engine.

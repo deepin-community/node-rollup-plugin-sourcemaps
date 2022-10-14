@@ -1,0 +1,51 @@
+node-rollup-plugin-sourcemaps (0.6.3-6) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix d/watch
+    + Fix filenamemangle
+    + Use /tags instead of /releases
+  * Enable upstream test (ts-jest)
+
+ -- Yadd <yadd@debian.org>  Fri, 05 Nov 2021 06:32:58 +0100
+
+node-rollup-plugin-sourcemaps (0.6.3-5) unstable; urgency=medium
+
+  * Team upload
+  * Add build dependency to node-jest-globals (Closes: #980649)
+  * Replace deprecated build dependency to node-typescript-types by
+    node-types-node (Closes: #979781)
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 21 Jan 2021 20:37:23 +0100
+
+node-rollup-plugin-sourcemaps (0.6.3-4) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.5.1
+  * Add ctype=nodejs to component(s)
+  * Remove useless dependencies to node-babel-plugin-external-helpers and
+    node-babel-preset-env
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 18 Dec 2020 14:36:41 +0100
+
+node-rollup-plugin-sourcemaps (0.6.3-3) unstable; urgency=medium
+
+  * Team upload.
+  * Source only upload
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 05 Nov 2020 06:01:33 +0100
+
+node-rollup-plugin-sourcemaps (0.6.3-2) unstable; urgency=medium
+
+  [ Pirate Praveen, Xavier Guimard ]
+  * Initial release (Closes: #930246)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 04 Nov 2020 07:41:24 +0100
